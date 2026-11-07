@@ -192,6 +192,14 @@ h1, h2, h3, p { margin-top: 0; }
 .credentials-empty { display: flex; align-items: center; gap: 14px; padding: 25px 0; color: var(--muted); font: 11px var(--mono); }
 .empty-symbol { color: var(--peach); font-size: 20px; }
 .empty-rule { width: 100px; height: 1px; background: var(--line); }
+.credentials-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13px; }
+.credential-item { display: grid; grid-template-columns: 40px 1fr; gap: 15px; min-height: 154px; padding: 20px; border: 1px solid var(--line); background: rgba(21,25,35,.55); transition: border-color .2s ease, background .2s ease; }
+.credential-item:hover { border-color: rgba(139,158,255,.62); background: rgba(25,30,42,.82); }
+.credential-icon { display: grid; place-items: center; width: 34px; height: 34px; color: var(--accent); border: 1px solid rgba(139,158,255,.35); }
+.credential-index { display: block; margin: 1px 0 12px; color: var(--peach); font: 9px var(--mono); text-transform: uppercase; letter-spacing: .07em; }
+.credential-copy h3 { max-width: 420px; margin: 0 0 17px; color: var(--text); font: 500 17px/1.25 var(--display); letter-spacing: -.025em; }
+.credential-link { display: inline-flex; align-items: center; gap: 7px; color: var(--accent-soft); font: 10px var(--mono); text-transform: uppercase; letter-spacing: .04em; }
+.credential-link:hover { color: var(--peach); }
 
 .contact-section { padding-bottom: 155px; }
 .contact-layout { display: grid; grid-template-columns: .76fr 1.24fr; gap: clamp(50px, 10vw, 150px); }
@@ -251,6 +259,11 @@ h1, h2, h3, p { margin-top: 0; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+
+@media (max-width: 620px) {
+  .credentials-grid { grid-template-columns: 1fr; }
+  .credential-item { min-height: 0; }
 }
 
 .step-type-diagram { position: relative; max-width: 630px; margin: 30px auto 0; }

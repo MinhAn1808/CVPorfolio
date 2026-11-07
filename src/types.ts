@@ -14,6 +14,13 @@ export interface SkillCategory {
   supporting?: boolean
 }
 
+export interface Certificate {
+  title: string
+  issuer: string
+  verificationUrl: string
+  description?: BilingualText
+}
+
 export interface Project {
   slug: string
   index: string

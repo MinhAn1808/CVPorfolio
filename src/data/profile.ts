@@ -53,8 +53,9 @@ export const values: Array<{ title: BilingualText; description: BilingualText; m
 ]
 
 export const education = {
-  institution: 'FPT University',
+  institution: 'FPT University – Ho Chi Minh City Campus',
   major: { en: 'Software Engineering', vi: 'Kỹ thuật Phần mềm' },
-  graduation: { en: 'Expected graduation · 2027', vi: 'Dự kiến tốt nghiệp · 2027' },
+  graduation: { en: 'Graduated · February 2026', vi: 'Đã tốt nghiệp · Tháng 02/2026' },
   direction: { en: 'Career direction · Backend Developer – ASP.NET', vi: 'Định hướng · Backend Developer – ASP.NET' },
+  year: '2026',
 }
