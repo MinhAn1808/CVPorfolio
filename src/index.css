@@ -158,9 +158,6 @@ h1, h2, h3, p { margin-top: 0; }
 .project-type { color: var(--peach); text-align: right; line-height: 1.4; }
 .project-card-title { min-height: 96px; margin-top: 27px; }
 .project-card-title h3 { max-width: 340px; margin: 0; color: var(--text); font: 500 24px/1.12 var(--display); letter-spacing: -.045em; }
-.project-orbit { position: absolute; right: 3px; top: -14px; width: 56px; height: 56px; border: 1px solid rgba(139,158,255,.35); border-radius: 50%; }
-.project-orbit::before { content: ''; position: absolute; left: 50%; top: -1px; width: 1px; height: 56px; background: rgba(139,158,255,.25); transform: rotate(45deg); transform-origin: center; }
-.project-orbit span { position: absolute; left: 9px; bottom: 7px; width: 6px; height: 6px; border-radius: 50%; background: var(--peach); }
 .project-summary { position: relative; z-index: 1; min-height: 78px; margin: 16px 0 18px; color: var(--muted); font-size: 12px; line-height: 1.7; }
 .project-highlight { display: grid; gap: 7px; min-height: 60px; margin-bottom: 18px; padding: 12px 13px; border-left: 2px solid var(--accent); background: rgba(139,158,255,.06); }
 .project-card:nth-child(2) .project-highlight { border-left-color: var(--peach); background: rgba(255,178,139,.05); }

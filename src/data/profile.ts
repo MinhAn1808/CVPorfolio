@@ -16,21 +16,21 @@ export const profile = {
 
 export const heroIntro: BilingualText = {
   en: 'Final-year Software Engineering graduate from FPT University with a foundation in computer networking, IT support, and system administration. Hands-on experience in backend development using .NET and ASP.NET Core. Eager to develop a career in IT Support, Helpdesk, and IT Administration, with a proactive attitude, strong problem-solving skills, and willingness to learn new technologies.',
-  vi: 'Tốt nghiệp ngành Kỹ thuật Phần mềm tại Đại học FPT, có nền tảng về mạng máy tính, hỗ trợ CNTT và quản trị hệ thống. Có kinh nghiệm thực hành phát triển Backend với .NET và ASP.NET Core. Mong muốn phát triển sự nghiệp trong lĩnh vực IT Support, Helpdesk và IT Administration, với tinh thần chủ động, khả năng giải quyết vấn đề tốt và sẵn sàng học hỏi công nghệ mới.',
+  vi: 'Cử nhân Kỹ thuật Phần mềm tại Đại học FPT, có nền tảng về mạng máy tính, hỗ trợ CNTT và quản trị hệ thống. Có kinh nghiệm thực hành phát triển Backend với .NET và ASP.NET Core. Định hướng phát triển trong lĩnh vực IT Support, Helpdesk và IT Administration; chủ động, tư duy giải quyết vấn đề tốt và sẵn sàng học công nghệ mới.',
 }
 
 export const aboutCopy: BilingualText[] = [
   {
     en: 'Final-year Software Engineering graduate from FPT University with a foundation in computer networking, IT support, and system administration. Hands-on experience in backend development using .NET and ASP.NET Core. Eager to develop a career in IT Support, Helpdesk, and IT Administration, with a proactive attitude, strong problem-solving skills, and willingness to learn new technologies.',
-    vi: 'Tốt nghiệp ngành Kỹ thuật Phần mềm tại Đại học FPT, có nền tảng về mạng máy tính, hỗ trợ CNTT và quản trị hệ thống. Có kinh nghiệm thực hành phát triển Backend với .NET và ASP.NET Core. Mong muốn phát triển sự nghiệp trong lĩnh vực IT Support, Helpdesk và IT Administration, với tinh thần chủ động, khả năng giải quyết vấn đề tốt và sẵn sàng học hỏi công nghệ mới.',
+    vi: 'Cử nhân Kỹ thuật Phần mềm tại Đại học FPT, có nền tảng về mạng máy tính, hỗ trợ CNTT và quản trị hệ thống. Có kinh nghiệm thực hành phát triển Backend với .NET và ASP.NET Core. Định hướng phát triển trong lĩnh vực IT Support, Helpdesk và IT Administration; chủ động, tư duy giải quyết vấn đề tốt và sẵn sàng học công nghệ mới.',
   },
   {
     en: 'I am currently focusing on backend development with ASP.NET, building RESTful APIs, and understanding system architecture through practical projects.',
-    vi: 'Hiện tại, tôi tập trung phát triển kỹ năng Backend với ASP.NET, xây dựng RESTful API và tìm hiểu kiến trúc hệ thống thông qua các dự án thực tế.',
+    vi: 'Tôi tập trung phát triển Backend với ASP.NET, xây dựng RESTful API và tìm hiểu kiến trúc hệ thống qua các dự án thực tế.',
   },
   {
     en: 'I enjoy learning new technologies, solving technical problems, and building maintainable software solutions. I am proactive, responsible, and eager to grow as a professional Backend Developer.',
-    vi: 'Tôi là người chủ động, có trách nhiệm, yêu thích học hỏi và luôn mong muốn cải thiện năng lực chuyên môn để phát triển thành một Backend Developer chuyên nghiệp.',
+    vi: 'Tôi chủ động, có trách nhiệm, thích giải quyết vấn đề kỹ thuật và luôn muốn nâng cao năng lực chuyên môn.',
   },
 ]
 

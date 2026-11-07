@@ -15,7 +15,7 @@ export function ProjectCard({ project, compact = false }: { project: Project; co
       <ProjectImage project={project} />
       <div className="project-card-content">
         <div className="project-card-top"><span className="project-index">{project.index} / 03</span><span className="project-type">{text(project.type)}</span></div>
-        <div className="project-card-title"><h3>{text(project.title)}</h3><span className="project-orbit" aria-hidden="true"><span /></span></div>
+        <div className="project-card-title"><h3>{text(project.title)}</h3></div>
         <p className="project-summary">{text(project.overview)}</p>
         <div className="project-highlight"><span>{t.labels.highlights}</span><strong>{text(project.highlights[0])}</strong></div>
         {!compact && <div className="project-meta"><div><span>{t.labels.role}</span><strong>{text(project.role)}</strong></div><div><span>{t.labels.team}</span><strong>{text(project.team)}</strong></div><div><span>{t.labels.status}</span><strong>{text(project.status)}</strong></div></div>}
