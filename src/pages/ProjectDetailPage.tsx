@@ -5,6 +5,7 @@ import { useLanguage } from '../i18n/LanguageContext'
 import { projects } from '../data/projects'
 import type { BilingualText, Language } from '../types'
 import { TechBadge } from '../components/common/TechBadge'
+import { ProjectImage } from '../components/common/ProjectImage'
 
 function CopyList({ items, language, ordered = false }: { items: BilingualText[]; language: Language; ordered?: boolean }) {
   const Tag = ordered ? 'ol' : 'ul'
@@ -29,6 +30,7 @@ export function ProjectDetailPage() {
           <p>{copy(project.overview)}</p>
           <div className="detail-meta"><div><span>{t.labels.role}</span><strong>{copy(project.role)}</strong></div><div><span>{t.labels.team}</span><strong>{copy(project.team)}</strong></div><div><span>{t.labels.status}</span><strong>{copy(project.status)}</strong></div></div>
         </header>
+        <ProjectImage project={project} placement="detail" />
         <div className="detail-content">
           <section className="detail-section" id="overview"><div className="detail-section-title"><span>01</span><h2>{t.detail.overview}</h2></div><p>{copy(project.detail.problem)}</p></section>
           <section className="detail-section"><div className="detail-section-title"><span>02</span><h2>{t.labels.solution}</h2></div><p>{copy(project.detail.solution)}</p></section>

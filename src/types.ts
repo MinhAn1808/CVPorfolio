@@ -17,6 +17,15 @@ export interface SkillCategory {
 export interface Project {
   slug: string
   index: string
+  image: {
+    src: string
+    alt: BilingualText
+    title: string
+    creator: string
+    sourceUrl: string
+    license: string
+    licenseUrl: string
+  }
   title: BilingualText
   shortTitle: string
   type: BilingualText

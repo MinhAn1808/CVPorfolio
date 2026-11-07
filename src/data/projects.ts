@@ -3,6 +3,15 @@ import type { Project } from '../types'
 export const projects: Project[] = [
   {
     slug: 'tiktok-live-tools', index: '01', shortTitle: 'TikTok Live Tools',
+    image: {
+      src: '/images/projects/live-stream-microphone.jpg',
+      alt: { en: 'Studio microphone and pop filter as contextual imagery for live-streaming development.', vi: 'Micro phòng thu và màng lọc âm, ảnh ngữ cảnh cho dự án phát triển công cụ livestream.' },
+      title: 'Microphone And Popup Filter (43271978552)',
+      creator: 'Dejan Krsmanovic',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Microphone_And_Popup_Filter_(43271978552).jpg',
+      license: 'CC BY 2.0',
+      licenseUrl: 'https://creativecommons.org/licenses/by/2.0/',
+    },
     title: { en: 'TikTok Live Tools – AI-Powered Live Streaming Assistant', vi: 'TikTok Live Tools – Trợ lý Livestream tích hợp AI' },
     type: { en: 'Personal Project', vi: 'Dự án cá nhân' }, role: { en: 'Solo Developer · End-to-End Development', vi: 'Lập trình viên duy nhất · Phát triển toàn bộ' }, team: { en: '1 developer', vi: '1 lập trình viên' }, status: { en: 'Status not supplied', vi: 'Chưa cung cấp trạng thái' },
     overview: { en: 'A personal project designed to enhance TikTok LIVE interactions through event integration and AI-powered automated responses.', vi: 'Dự án cá nhân hỗ trợ tương tác trong TikTok LIVE, kết hợp hệ thống xử lý sự kiện và AI để tự động tạo nội dung phản hồi cho người xem.' },
@@ -32,6 +41,15 @@ export const projects: Project[] = [
   },
   {
     slug: 'libot', index: '02', shortTitle: 'LiBot',
+    image: {
+      src: '/images/projects/library-book-robot.jpg',
+      alt: { en: 'A book-delivery robot at Helsinki Central Library Oodi, shown only as a contextual reference.', vi: 'Robot vận chuyển sách tại Thư viện Trung tâm Helsinki Oodi, chỉ dùng làm ảnh tham khảo ngữ cảnh.' },
+      title: 'Helsinki Central Library Oodi Robot 01',
+      creator: 'ThePikachin',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:Helsinki_Central_Library_Oodi_Robot_01.jpg',
+      license: 'CC BY-SA 4.0',
+      licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
+    },
     title: { en: 'LiBot – Smart Library Management System with Autonomous Robot Integration', vi: 'LiBot – Hệ thống quản lý thư viện thông minh tích hợp Robot tự hành' },
     type: { en: 'University Capstone Project', vi: 'Đồ án tốt nghiệp đại học' }, role: { en: 'Backend Developer', vi: 'Backend Developer' }, team: { en: '5 members', vi: '5 thành viên' }, status: { en: 'In development', vi: 'Đang phát triển' },
     overview: { en: 'A smart library management system integrated with autonomous robots to support library operations, book management, location mapping, and robot-based inventory activities.', vi: 'Hệ thống quản lý thư viện thông minh tích hợp robot tự hành, hỗ trợ hoạt động thư viện, quản lý sách, bản đồ vị trí và kiểm kê bằng robot.' },
@@ -50,6 +68,15 @@ export const projects: Project[] = [
   },
   {
     slug: 'fertility-management', index: '03', shortTitle: 'Fertility Management',
+    image: {
+      src: '/images/projects/fertility-clinic.jpg',
+      alt: { en: 'Clinical equipment at Fertility Clinic Nordic, shown as contextual healthcare imagery.', vi: 'Thiết bị y tế tại Fertility Clinic Nordic, dùng làm ảnh minh họa ngữ cảnh chăm sóc sức khỏe.' },
+      title: '2017 fertility clinic nordic',
+      creator: 'Merlilindberg',
+      sourceUrl: 'https://commons.wikimedia.org/wiki/File:2017_fertility_clinic_nordic.jpg',
+      license: 'CC BY-SA 4.0',
+      licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
+    },
     title: { en: 'Fertility Treatment Management System', vi: 'Hệ thống quản lý điều trị hiếm muộn' },
     type: { en: 'University Group Project', vi: 'Dự án nhóm đại học' }, role: { en: 'Backend Developer', vi: 'Backend Developer' }, team: { en: '5 members', vi: '5 thành viên' }, status: { en: 'Status not supplied', vi: 'Chưa cung cấp trạng thái' },
     overview: { en: 'A healthcare management system designed to support fertility treatment workflows, patient management, booking, medicine management, and inventory operations through a microservices-based architecture.', vi: 'Hệ thống quản lý điều trị hiếm muộn hỗ trợ quy trình bệnh nhân, đặt lịch, quản lý thuốc và tồn kho, được xây dựng theo kiến trúc Microservices.' },
