@@ -172,14 +172,14 @@ h1, h2, h3, p { margin-top: 0; }
 .project-link { justify-content: space-between; width: 100%; margin-top: auto; padding-top: 17px; border-top: 1px solid rgba(48,55,70,.8); }
 .project-card-content { display: flex; flex: 1; flex-direction: column; padding: 22px; }
 .project-image { margin: 0; overflow: hidden; border-bottom: 1px solid var(--line); background: var(--bg-soft); }
-.project-image img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.project-image img { display: block; width: 100%; height: auto; object-fit: contain; background: var(--bg-soft); }
 .project-image-card img { aspect-ratio: 16 / 8.5; }
 .project-image-card figcaption { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px 12px; padding: 8px 11px; color: var(--faint); font: 8px/1.4 var(--mono); }
 .image-credit { display: inline-flex; align-items: center; flex-wrap: wrap; gap: 5px; }
 .image-credit a { color: var(--muted); text-decoration: underline; text-decoration-color: rgba(170,176,192,.32); text-underline-offset: 2px; }
 .image-credit a:hover { color: var(--accent-soft); }
-.project-image-detail { display: flex; width: 100%; aspect-ratio: 2 / 1; flex-direction: column; margin: 0 auto 14px; border: 1px solid var(--line); }
-.project-image-detail img { min-height: 0; flex: 1; object-position: center 50%; }
+.project-image-detail { width: 100%; margin: 0 auto 14px; border: 1px solid var(--line); }
+.project-image-detail img { width: 100%; height: auto; object-position: center 50%; }
 .project-image-detail figcaption { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px 18px; padding: 12px 15px; color: var(--faint); background: var(--bg-soft); font: 9px/1.5 var(--mono); }
 .project-image-libot img { object-position: center 58%; }
 .projects-next { display: flex; align-items: center; justify-content: space-between; width: min(100%, 300px); margin: 36px 0 0 auto; padding-bottom: 9px; color: var(--accent-soft); border-bottom: 1px solid var(--line); font: 11px var(--mono); text-transform: uppercase; letter-spacing: .05em; }
@@ -257,7 +257,6 @@ h1, h2, h3, p { margin-top: 0; }
 
 @media (max-width: 620px) {
   .project-card { min-height: 0; }
-  .project-image-detail { aspect-ratio: 4 / 3; }
   .project-image-detail figcaption { align-items: flex-start; flex-direction: column; }
 }
 
