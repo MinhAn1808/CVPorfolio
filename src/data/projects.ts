@@ -13,7 +13,7 @@ export const projects: Project[] = [
       licenseUrl: 'https://creativecommons.org/licenses/by/2.0/',
     },
     title: { en: 'TikTok Live Tools – AI-Powered Live Streaming Assistant', vi: 'TikTok Live Tools – Trợ lý livestream tích hợp AI' },
-    type: { en: 'Personal Project', vi: 'Dự án cá nhân' }, role: { en: 'Solo Developer · End-to-End Development', vi: 'Phát triển độc lập từ đầu đến cuối' }, team: { en: '1 developer', vi: '1 lập trình viên' }, status: { en: 'Status not supplied', vi: 'Chưa cập nhật' },
+    type: { en: 'Personal Project', vi: 'Dự án cá nhân' }, role: { en: 'Solo Developer · End-to-End Development', vi: 'Phát triển độc lập từ đầu đến cuối' }, team: { en: '1 developer', vi: '1 lập trình viên' },
     overview: { en: 'A personal project designed to enhance TikTok LIVE interactions through event integration and AI-powered automated responses.', vi: 'Dự án cá nhân nâng cao tương tác TikTok LIVE bằng cách kết hợp xử lý sự kiện với phản hồi tự động từ AI.' },
     responsibilities: [
       { en: 'Designed and developed the backend API using .NET.', vi: 'Thiết kế và phát triển Backend API bằng .NET.' },
@@ -36,7 +36,7 @@ export const projects: Project[] = [
       decisions: [{ en: 'Keep the application workflow explicit so each external integration remains easy to reason about.', vi: 'Thiết kế luồng rõ ràng để dễ kiểm tra và bảo trì từng tích hợp.' }, { en: 'Use a backend boundary for event processing and AI interaction.', vi: 'Để Backend xử lý sự kiện và giao tiếp với AI.' }],
       challenges: [{ en: 'Coordinating the event, AI, and interface parts of one end-to-end workflow.', vi: 'Kết hợp sự kiện, AI và giao diện trong một luồng thống nhất.' }, { en: 'Keeping external integrations understandable as one usable product.', vi: 'Giữ các tích hợp bên ngoài dễ theo dõi trong cùng một sản phẩm.' }],
       solutions: [{ en: 'Use the backend API as a clear boundary for event processing and AI interaction.', vi: 'Dùng Backend API làm lớp xử lý sự kiện và tương tác AI.' }, { en: 'Connect the response flow to the ReactJS interface as one end-to-end application.', vi: 'Kết nối luồng phản hồi với giao diện ReactJS.' }],
-      currentStatus: { en: 'Project status was not supplied. No deployment or completion claim is made here.', vi: 'Chưa cập nhật trạng thái dự án. Không khẳng định dự án đã triển khai hoặc hoàn thành.' }, diagram: ['TikTok LIVE EventBridge', 'ASP.NET API', 'Google Gemini AI', 'ReactJS interface'],
+      diagram: ['TikTok LIVE EventBridge', 'ASP.NET API', 'Google Gemini AI', 'ReactJS interface'],
     },
   },
   {
@@ -51,7 +51,7 @@ export const projects: Project[] = [
       licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
     },
     title: { en: 'LiBot – Smart Library Management System with Autonomous Robot Integration', vi: 'LiBot – Hệ thống quản lý thư viện tích hợp robot tự hành' },
-    type: { en: 'University Capstone Project', vi: 'Đồ án tốt nghiệp' }, role: { en: 'Backend Developer', vi: 'Backend Developer' }, team: { en: '5 members', vi: '5 thành viên' }, status: { en: 'In development', vi: 'Đang phát triển' },
+    type: { en: 'University Capstone Project', vi: 'Đồ án tốt nghiệp' }, role: { en: 'Backend Developer', vi: 'Backend Developer' }, team: { en: '5 members', vi: '5 thành viên' },
     overview: { en: 'A smart library management system integrated with autonomous robots to support library operations, book management, location mapping, and robot-based inventory activities.', vi: 'Hệ thống quản lý thư viện tích hợp robot tự hành, hỗ trợ quản lý sách, bản đồ vị trí và kiểm kê.' },
     responsibilities: [{ en: 'Developed account and book management APIs.', vi: 'Phát triển API quản lý tài khoản và sách.' }, { en: 'Implemented borrowing, returning, and library book management workflows.', vi: 'Xây dựng quy trình mượn, trả và quản lý sách.' }, { en: 'Connected library location data with the autonomous robot system.', vi: 'Kết nối dữ liệu vị trí thư viện với hệ thống robot.' }, { en: 'Designed the extensible Step Type architecture for robot operations.', vi: 'Thiết kế kiến trúc Step Type mở rộng cho robot.' }],
     highlights: [{ en: 'Library domain API development', vi: 'Phát triển API nghiệp vụ thư viện' }, { en: 'Library map and robot integration', vi: 'Tích hợp bản đồ thư viện với robot' }, { en: 'Extensible MOVE / SCAN operation model', vi: 'Mô hình thao tác MOVE / SCAN có thể mở rộng' }], technologies: ['.NET 8', 'ASP.NET Core', 'REST API', 'Entity Framework Core', 'Clean Architecture'],
@@ -63,7 +63,7 @@ export const projects: Project[] = [
       decisions: [{ en: 'Represent each robot action as a typed step to keep the operation model explicit.', vi: 'Biểu diễn mỗi thao tác robot như một step có kiểu để mô hình rõ ràng.' }, { en: 'Keep operation-specific data within its step type so new types can be added independently.', vi: 'Đặt dữ liệu đặc thù trong từng Step Type để có thể bổ sung loại mới độc lập.' }],
       challenges: [{ en: 'Robot operations such as MOVE and SCAN need different behavior while fitting into one extensible model.', vi: 'MOVE và SCAN có logic khác nhau nhưng vẫn phải dùng chung một mô hình mở rộng.' }, { en: 'Library location data must be available to the robot-integrated workflow.', vi: 'Dữ liệu vị trí thư viện phải được đưa vào luồng xử lý của robot.' }],
       solutions: [{ en: 'Represent operations as typed steps so MOVE and SCAN remain distinct and further step types can be added.', vi: 'Dùng Step Type riêng cho MOVE và SCAN, đồng thời cho phép bổ sung loại mới.' }, { en: 'Connect library map and location data in the backend integration.', vi: 'Kết nối bản đồ và dữ liệu vị trí vào Backend.' }],
-      currentStatus: { en: 'In development as a five-member university capstone team.', vi: 'Đang phát triển trong nhóm đồ án 5 thành viên.' }, diagram: ['Library APIs', 'Map data', 'Step Type', 'MOVE / SCAN'],
+      diagram: ['Library APIs', 'Map data', 'Step Type', 'MOVE / SCAN'],
     },
   },
   {
@@ -78,7 +78,7 @@ export const projects: Project[] = [
       licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/',
     },
     title: { en: 'Fertility Treatment Management System', vi: 'Hệ thống quản lý điều trị hiếm muộn' },
-    type: { en: 'University Group Project', vi: 'Dự án nhóm đại học' }, role: { en: 'Backend Developer', vi: 'Backend Developer' }, team: { en: '5 members', vi: '5 thành viên' }, status: { en: 'Status not supplied', vi: 'Chưa cung cấp trạng thái' },
+    type: { en: 'University Group Project', vi: 'Dự án nhóm đại học' }, role: { en: 'Backend Developer', vi: 'Backend Developer' }, team: { en: '5 members', vi: '5 thành viên' },
     overview: { en: 'A healthcare management system designed to support fertility treatment workflows, patient management, booking, medicine management, and inventory operations through a microservices-based architecture.', vi: 'Hệ thống hỗ trợ quản lý bệnh nhân, đặt lịch, thuốc và tồn kho theo kiến trúc Microservices.' },
     responsibilities: [{ en: 'Developed Account Management and IAM-related APIs.', vi: 'Phát triển API quản lý tài khoản và IAM.' }, { en: 'Developed Patient Management APIs and related workflows.', vi: 'Phát triển API quản lý bệnh nhân và nghiệp vụ liên quan.' }, { en: 'Developed Medicine and Inventory Management APIs.', vi: 'Phát triển API quản lý thuốc và tồn kho.' }, { en: 'Developed APIs supporting booking and appointment workflows.', vi: 'Phát triển API đặt lịch và quản lý lịch hẹn.' }, { en: 'Used gRPC, RabbitMQ, and AWS S3 for service integration.', vi: 'Tích hợp các service bằng gRPC, RabbitMQ và AWS S3.' }],
     highlights: [{ en: 'Microservices backend implementation', vi: 'Triển khai Backend theo Microservices' }, { en: 'gRPC and RabbitMQ integration', vi: 'Tích hợp gRPC và RabbitMQ' }, { en: 'AWS S3 image storage', vi: 'Lưu trữ hình ảnh với AWS S3' }], technologies: ['.NET / ASP.NET', 'Microservices', 'REST API', 'gRPC', 'RabbitMQ', 'AWS S3'],
@@ -90,7 +90,7 @@ export const projects: Project[] = [
       decisions: [{ en: 'Use gRPC for service-to-service calls where a direct contract is useful.', vi: 'Dùng gRPC cho giao tiếp trực tiếp giữa các service.' }, { en: 'Use RabbitMQ for asynchronous communication between backend workflows.', vi: 'Dùng RabbitMQ cho message bất đồng bộ.' }],
       challenges: [{ en: 'Healthcare workflows span patient, booking, medicine, and inventory responsibilities across services.', vi: 'Một quy trình y tế trải qua nhiều service và nghiệp vụ.' }, { en: 'Service integration involves both direct and asynchronous communication patterns.', vi: 'Kết hợp giao tiếp trực tiếp và bất đồng bộ giữa các service.' }],
       solutions: [{ en: 'Implement APIs in the assigned domains and use gRPC for service communication.', vi: 'Phát triển API theo nghiệp vụ được giao và dùng gRPC để kết nối service.' }, { en: 'Use RabbitMQ for asynchronous messaging and AWS S3 for image storage.', vi: 'Dùng RabbitMQ cho message và AWS S3 để lưu ảnh.' }],
-      currentStatus: { en: 'Project status was not supplied. The page reflects confirmed contributions only.', vi: 'Chưa cập nhật trạng thái dự án. Trang chỉ phản ánh các đóng góp đã xác nhận.' }, diagram: ['Domain services', 'REST APIs', 'gRPC', 'RabbitMQ', 'AWS S3'],
+      diagram: ['Domain services', 'REST APIs', 'gRPC', 'RabbitMQ', 'AWS S3'],
     },
   },
 ]

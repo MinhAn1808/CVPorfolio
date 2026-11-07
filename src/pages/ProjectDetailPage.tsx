@@ -1,4 +1,4 @@
-import { ArrowLeft, ArrowRight, Check, CircleDot, ExternalLink } from 'lucide-react'
+import { ArrowLeft, ArrowRight, Check, ExternalLink } from 'lucide-react'
 import { motion, useReducedMotion } from 'framer-motion'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { useLanguage } from '../i18n/LanguageContext'
@@ -25,10 +25,10 @@ export function ProjectDetailPage() {
       <div className="detail-shell">
         <Link className="back-link" to="/#projects"><ArrowLeft size={16} />{t.actions.back}</Link>
         <header className="detail-hero">
-          <div className="detail-eyebrow"><span>{project.index} / 03</span><span>{copy(project.type)}</span><span className="detail-status"><CircleDot size={12} />{copy(project.status)}</span></div>
+          <div className="detail-eyebrow"><span>{project.index} / 03</span><span>{copy(project.type)}</span></div>
           <h1>{copy(project.title)}</h1>
           <p>{copy(project.overview)}</p>
-          <div className="detail-meta"><div><span>{t.labels.role}</span><strong>{copy(project.role)}</strong></div><div><span>{t.labels.team}</span><strong>{copy(project.team)}</strong></div><div><span>{t.labels.status}</span><strong>{copy(project.status)}</strong></div></div>
+          <div className="detail-meta"><div><span>{t.labels.role}</span><strong>{copy(project.role)}</strong></div><div><span>{t.labels.team}</span><strong>{copy(project.team)}</strong></div></div>
         </header>
         <ProjectImage project={project} placement="detail" />
         <div className="detail-content">
@@ -45,7 +45,6 @@ export function ProjectDetailPage() {
           <section className="detail-section"><div className="detail-section-title"><span>07</span><h2>{t.labels.decisions}</h2></div><CopyList items={project.detail.decisions} language={language} /></section>
           <section className="detail-section detail-two-col"><div><div className="detail-section-title"><span>08</span><h2>{t.labels.challenges}</h2></div><CopyList items={project.detail.challenges} language={language} /></div><div><div className="detail-section-title"><span>09</span><h2>{language === 'en' ? 'Solutions' : 'Giải pháp'}</h2></div><CopyList items={project.detail.solutions} language={language} /></div></section>
           <section className="detail-section"><div className="detail-section-title"><span>10</span><h2>{t.labels.stack}</h2></div><div className="detail-tech">{project.technologies.map(tech => <TechBadge key={tech}>{tech}</TechBadge>)}</div></section>
-          <section className="detail-section status-section"><div className="detail-section-title"><span>11</span><h2>{t.labels.currentStatus}</h2></div><p>{copy(project.detail.currentStatus)}</p></section>
           <div className="detail-source-row">{project.github ? <a className="inline-link" href={project.github} target="_blank" rel="noreferrer">GitHub <ExternalLink size={14} /></a> : <span className="muted-label">{t.detail.noGithub}</span>}</div>
         </div>
         <Link className="next-project-link" to={`/projects/${next.slug}`}><span><small>{language === 'en' ? 'Next case study' : 'Case study tiếp theo'}</small><strong>{next.shortTitle}</strong></span><ArrowRight size={20} /></Link>

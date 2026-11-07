@@ -38,7 +38,6 @@ export interface Project {
   type: BilingualText
   role: BilingualText
   team: BilingualText
-  status: BilingualText
   overview: BilingualText
   responsibilities: BilingualText[]
   highlights: BilingualText[]
@@ -52,7 +51,6 @@ export interface Project {
     decisions: BilingualText[]
     challenges: BilingualText[]
     solutions: BilingualText[]
-    currentStatus: BilingualText
     diagram: string[]
   }
 }
