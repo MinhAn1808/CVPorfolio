@@ -52,5 +52,6 @@ export interface Project {
     challenges: BilingualText[]
     solutions: BilingualText[]
     diagram: string[]
+    stepTypes?: Array<{ name: string; description: BilingualText }>
   }
 }

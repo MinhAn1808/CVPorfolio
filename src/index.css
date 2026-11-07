@@ -287,10 +287,21 @@ h1, h2, h3, p { margin-top: 0; }
 .step-type-future strong { color: var(--muted); font-size: 9px; }
 .conceptual-nodes { display: grid; grid-template-columns: repeat(auto-fit, minmax(115px, 1fr)); gap: 9px; margin-top: 26px; }
 .conceptual-nodes .diagram-node { min-width: 0; }
+.step-types-block { margin: 58px 0 0 62px; }
+.step-types-block .detail-section-title { margin-left: 0; }
+.step-types-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; margin-top: 25px; border: 1px solid var(--line); background: var(--line); }
+.step-type-row { display: grid; grid-template-columns: 30px 145px 1fr; gap: 10px; align-items: start; min-height: 72px; padding: 14px; background: var(--card); }
+.step-type-row > span { color: var(--accent); font: 9px var(--mono); }
+.step-type-row strong { color: var(--text); font: 600 10px var(--mono); letter-spacing: .02em; }
+.step-type-row p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.45; }
 
 @media (max-width: 620px) {
   .step-type-branches { grid-template-columns: 1fr; gap: 8px; margin-top: 30px; }
   .step-type-branches::before { display: none; }
   .step-type-branch { min-height: 48px; }
   .step-type-branch::before { height: 10px; }
+  .step-types-block { margin-left: 0; }
+  .step-types-grid { grid-template-columns: 1fr; }
+  .step-type-row { grid-template-columns: 25px 1fr; }
+  .step-type-row p { grid-column: 2; }
 }

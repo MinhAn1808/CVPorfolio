@@ -8,7 +8,7 @@ export function ProjectImage({ project, placement = 'card' }: { project: Project
       <img src={project.image.src} alt={project.image.alt[language]} width="960" height="960" loading={placement === 'detail' ? 'eager' : 'lazy'} />
       <figcaption>
         <span>{t.detail.illustrative}</span>
-        <span className="image-credit"><a href={project.image.sourceUrl} target="_blank" rel="noreferrer">{project.image.title}</a><span>{project.image.creator}</span><a href={project.image.licenseUrl} target="_blank" rel="noreferrer">{project.image.license}</a></span>
+        <span className="image-credit">{project.image.sourceUrl ? <a href={project.image.sourceUrl} target="_blank" rel="noreferrer">{project.image.title}</a> : <span>{project.image.title}</span>}<span>{project.image.creator}</span>{project.image.licenseUrl ? <a href={project.image.licenseUrl} target="_blank" rel="noreferrer">{project.image.license}</a> : <span>{project.image.license}</span>}</span>
       </figcaption>
     </figure>
   )
