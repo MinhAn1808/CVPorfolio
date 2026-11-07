@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from 'react'
-import { ArrowUpRight, Github, Linkedin, MapPin, Send } from 'lucide-react'
+import { ArrowUpRight, Github, Linkedin, MapPin, MessageCircle, Phone, Send } from 'lucide-react'
 import { useLanguage } from '../../i18n/LanguageContext'
 import { profile } from '../../data/profile'
 import { SectionHeading } from '../common/SectionHeading'
@@ -26,6 +26,8 @@ export function Contact() {
       <div className="contact-layout">
         <div className="contact-info">
           <span className="contact-line-label">{language === 'en' ? 'Find me here' : 'Kết nối với tôi'}</span>
+          <a className="contact-method" href={`https://zalo.me/${profile.zalo}`} target="_blank" rel="noreferrer"><span>{t.labels.zalo}</span><strong>{profile.zalo}</strong><MessageCircle size={16} /></a>
+          <a className="contact-method" href={`tel:${profile.phone}`}><span>{t.labels.phone}</span><strong>{profile.phone}</strong><Phone size={16} /></a>
           {profile.email && <a className="contact-method" href={`mailto:${profile.email}`}><span>Email</span><strong>{profile.email}</strong><ArrowUpRight size={16} /></a>}
           {profile.github && <a className="contact-method" href={profile.github} target="_blank" rel="noreferrer"><span>GitHub</span><strong>{profile.github.replace(/^https?:\/\//, '')}</strong><Github size={16} /></a>}
           {profile.linkedin && <a className="contact-method" href={profile.linkedin} target="_blank" rel="noreferrer"><span>LinkedIn</span><strong>{profile.linkedin.replace(/^https?:\/\//, '')}</strong><Linkedin size={16} /></a>}
