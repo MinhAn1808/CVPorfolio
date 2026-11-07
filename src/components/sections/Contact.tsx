@@ -31,7 +31,7 @@ export function Contact() {
           {profile.email && <a className="contact-method" href={`mailto:${profile.email}`}><span>Email</span><strong>{profile.email}</strong><ArrowUpRight size={16} /></a>}
           {profile.github && <a className="contact-method" href={profile.github} target="_blank" rel="noreferrer"><span>GitHub</span><strong>{profile.github.replace(/^https?:\/\//, '')}</strong><Github size={16} /></a>}
           {profile.linkedin && <a className="contact-method" href={profile.linkedin} target="_blank" rel="noreferrer"><span>LinkedIn</span><strong>{profile.linkedin.replace(/^https?:\/\//, '')}</strong><Linkedin size={16} /></a>}
-          <div className="contact-method contact-location"><span>{t.labels.location}</span><strong><MapPin size={15} />{language === 'en' ? profile.location : 'Việt Nam'}</strong><span className="location-note">{language === 'en' ? 'Based in Vietnam' : 'Đang sinh sống tại Việt Nam'}</span></div>
+          <div className="contact-method contact-location"><span>{t.labels.location}</span><strong><MapPin size={15} />{language === 'en' ? profile.location : profile.locationVi}</strong><span className="location-note">{language === 'en' ? 'Based in Ho Chi Minh City' : 'Đang sinh sống tại TP. Hồ Chí Minh'}</span></div>
           {!profile.email && <p className="contact-config-note">{t.form.unavailable}</p>}
         </div>
         <form className="contact-form" onSubmit={onSubmit}>

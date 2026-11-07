@@ -9,7 +9,8 @@ export const profile = {
   email: 'leminhan1808@gmail.com',
   github: '',
   linkedin: '',
-  location: 'Vietnam',
+  location: 'Ho Chi Minh City, Vietnam',
+  locationVi: 'TP. Hồ Chí Minh, Việt Nam',
   cvPath: '',
 }
 
