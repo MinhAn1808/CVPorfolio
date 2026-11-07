@@ -23,7 +23,7 @@ function AppFrame() {
   const { pathname } = useLocation()
   const isDetail = pathname.startsWith('/projects/')
   return (
-    <div className="app-shell">
+    <div className="app-shell min-h-screen">
       <Navbar />
       <main><Routes>
         <Route path="/" element={<HomePage />} />

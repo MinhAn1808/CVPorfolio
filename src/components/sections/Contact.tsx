@@ -36,7 +36,7 @@ export function Contact() {
           <div className="form-row"><label>{t.form.name}<input name="name" autoComplete="name" required value={values.name} onChange={event => setValues({ ...values, name: event.target.value })} placeholder={t.form.namePlaceholder} /></label><label>{t.form.email}<input name="email" type="email" autoComplete="email" required value={values.email} onChange={event => setValues({ ...values, email: event.target.value })} placeholder={t.form.emailPlaceholder} /></label></div>
           <label>{t.form.subject}<input name="subject" required value={values.subject} onChange={event => setValues({ ...values, subject: event.target.value })} placeholder={t.form.subjectPlaceholder} /></label>
           <label>{t.form.message}<textarea name="message" required rows={5} value={values.message} onChange={event => setValues({ ...values, message: event.target.value })} placeholder={t.form.messagePlaceholder} /></label>
-          <div className="form-bottom"><button className="button button-primary" type="submit" disabled={state === 'loading'}>{state === 'loading' ? t.actions.sending : t.actions.send}<Send size={15} /></button><span className={`form-feedback form-feedback-${state}`} role="status" aria-live="polite">{formMessage}</span></div>
+          <div className="form-bottom"><button className="button button-primary" type="submit" disabled={state === 'loading'}>{state === 'loading' ? t.actions.sending : t.actions.send}<Send size={15} /></button><span className={`form-feedback form-feedback-${state} min-h-4`} role="status" aria-live="polite">{formMessage}</span></div>
         </form>
       </div>
     </section>
