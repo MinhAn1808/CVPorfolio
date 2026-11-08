@@ -17,7 +17,7 @@ export function useLanguage() {
 }
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguageState] = useState<Language>(() => localStorage.getItem('lma-language') === 'vi' ? 'vi' : 'en')
+  const [language, setLanguageState] = useState<Language>(() => localStorage.getItem('lma-language') === 'en' ? 'en' : 'vi')
   const setLanguage = (next: Language) => {
     setLanguageState(next)
     localStorage.setItem('lma-language', next)
