@@ -11,7 +11,7 @@ export const profile = {
   linkedin: '',
   location: 'Ho Chi Minh City, Vietnam',
   locationVi: 'TP. Hồ Chí Minh, Việt Nam',
-  cvPath: '',
+  cvPath: '/files/LeMinhAnBeDev.pdf',
 }
 
 export const heroIntro: BilingualText = {
